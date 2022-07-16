@@ -1,8 +1,9 @@
 .wrap {
+    padding-top: 150px;
     width: 1278px;
-    margin: 0 auto;
+    margin: 0 auto 100px;
 
-    border: 1px solid #333;
+    /* border: 1px solid #333; */
 }
 
 
@@ -71,7 +72,7 @@ aside .filter {
     position: sticky;
     background-color: #fdeae0;
     width: 270px;
-    top: 0;
+    top: 150px;
     padding: 0 15px;
 }
 
@@ -147,7 +148,7 @@ aside .filter>li h4 {
     font-weight: 300;
 }
 .filter .price .input_box input {
-    width: 100px;
+    width: 90px;
     margin-right: 5px;
 }
 .filter .price .input_box p {
@@ -199,6 +200,7 @@ aside .filter>li h4 {
 .product_coner .alignment li {
     padding-left: 20px;
     font-weight: 300;
+    cursor: pointer;
 }
 
 
@@ -232,12 +234,12 @@ aside .filter>li h4 {
 
 .product_coner .product_list li .thumbnail .thumbnail_logo {
     position: absolute;
-    width: 90px;
-    height: 90px;
+    width: 80px;
+    height: 80px;
     border-radius: 45px;
     overflow: hidden;
     top: 10px;
-    left: 10px;
+    left: 0px;
 }
 .product_coner .product_list li .thumbnail:hover {
     transform: scale(1.07);
@@ -278,4 +280,35 @@ aside .filter>li h4 {
     margin: 30px 0;
 }
 
+.product_coner .product_list li .text_box h5 {
+    color: gray;
+    line-height: 40px;
+}
 
+
+#page01, #page02 {display: none;}
+
+.phagination {
+    width: 200px;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.phagination label {
+    padding: 5px 15px;
+    font-size: 19px;
+    color: #222;
+    cursor: pointer;
+}
+
+#page01:checked ~ .phagination .page_01 {
+    background-color: #ff6c57;
+    border-radius: 50%;
+    color: white;
+}
+#page02:checked ~ .phagination .page_02 {
+    background-color: #ff6c57;
+    border-radius: 50%;
+    color: white;
+}

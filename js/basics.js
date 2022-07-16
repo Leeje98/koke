@@ -34,6 +34,8 @@ downBtn.addEventListener('click', () => {
 /* down_btn */
 
 
+
+
 const quickMove = document.querySelectorAll('.Quick_button_box.Move')
 
 window.addEventListener('scroll', () => {
@@ -47,8 +49,25 @@ window.addEventListener('scroll', () => {
         })
     }
 })
+/* top_btn, down_btn 200px 내려가면 보이는 효과*/
 
 
+
+
+const floating = document.querySelector('.floating_banner')
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 900) {
+    gsap.to(floating, 0.5, {
+      opacity: 1
+    })
+  } else {
+    gsap.to(floating, 0.5, {
+      opacity: 0
+    })
+  }
+})
+/* floating_banner 비주얼메인 지나치면 보이는 효과*/
 
 
 
