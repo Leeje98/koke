@@ -26,6 +26,13 @@
     <!--ScrollMagic-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" ></script>
 
+    <!-- gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
+    <!-- 애니메이션 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollToPlugin.min.js"></script>
+    <!-- 화면이동 -->
+
+
 
     <link rel="stylesheet" href="./css/basics.css">
     <link rel="stylesheet" href="./css/index.css">
@@ -66,14 +73,14 @@
                 <li>
                     <ul class="lnb01">
                         <li class="AllMenu"><i class="fa-solid fa-bars"></i></li>
-                        <li class="brand">브랜드 검색 <p>|</p></li>
+                        <li class="brand">브랜드 검색 <p style="display:inline-block">|</p></li>
                         <li class="coffee">모든커피</li>
                         <li class="point">내 커피 취향테스트</li>
                     </ul>
                 </li>
                 <!-- <li><div class="logo_box"><a href="./index.html"><img src="./imags/mian/koke_logo.png" alt=""></a></div></li> -->
                 <li>
-                    <ul class="02">
+                    <ul class="lnb02">
                         <li>싱글오리진</li>
                         <li>블렌드</li>
                         <li>구독하기</li>
@@ -204,6 +211,67 @@
         </div>
 
     </header>
+
+    <nav>
+        <div class="nav_inner">
+
+            <input type="checkbox" id="Quick_search_open_btn">
+            <div class="Quick_search_box Quick_button_box">
+                <label for="Quick_search_open_btn" class="Quick_search_open_btn_label"><i class="xi-search"></i></label>
+
+                <!-- <div class="search_sheet">
+                    <div class="search_sheet_inner">
+                        <label for="Quick_search_open_btn" class="search_sheet_close"><i class="xi-close"></i></label>
+
+                        <div class="search_box_outer"><input type="text" id="Quick_search"><button class="search_btn"><i class="xi-search"></i></button></div>
+                        <h4>인기 검색어</h4>
+                        <ul class="best_search">
+                            <li><a href="#!">바디워시</a></li>
+                            <li><a href="#!">디퓨져</a></li>
+                            <li><a href="#!">향수</a></li>
+                            <li><a href="#!">핸드크림</a></li>
+                            <li><a href="#!">선물</a></li>
+                            <li><a href="#!">데메테르 시그니처</a></li>
+                            <li><a href="#!">열쇠고리</a></li>
+                            <li><a href="#!">데메테르</a></li>
+                            <li><a href="#!">탄생화선물 에디션</a></li>
+                        </ul>
+                    </div>
+                </div> -->
+
+                <div class="title_tag">검색</div>
+            </div><!--Quick_search_box-->
+            
+            <div class="Quick_cart_box Quick_button_box">
+                <a href="#!"><i class="xi-user"></i></a>
+                <div class="title_tag">마이페이지</div>
+            </div><!--Quick_delivery_box-->
+            
+            <div class="Quick_cart_box Quick_button_box">
+                <a href="#!"><i class="xi-cart"></i></a>
+                <div class="title_tag">장바구니</div>
+            </div><!--Quick_delivery_box-->
+
+            <div class="Quick_delivery_box Quick_button_box">
+                <a href="#!"><i class="xi-truck xi-flip-horizontal"></i></a>
+                <div class="title_tag">배송조회</div>
+            </div><!--Quick_delivery_box-->
+
+            <div class="Quick_clock_box Quick_button_box">
+                <a href="#!"><i class="xi-clock"></i></a>
+                <div class="title_tag">최근 본 상품</div>
+            </div><!--Quick_delivery_box-->
+            
+            <div class="Quick_top_box Quick_button_box Move">
+                <i class="xi-angle-up"></i>
+            </div><!--top_box-->
+            
+            <div class="Quick_bottom_box Quick_button_box Move">
+                <i class="xi-angle-down"></i>
+            </div><!--bottom_box-->
+
+        </div>
+    </nav>
 
     <section class="main_visual">
             

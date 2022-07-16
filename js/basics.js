@@ -14,6 +14,43 @@ function hiddenEvent() {
 
 
 
+const topBtn = document.querySelector('.Quick_top_box')
+
+topBtn.addEventListener('click', () => {
+  gsap.to(window, 1, {
+    scrollTo: 0
+  })
+})
+/* top_btn */
+
+
+const downBtn = document.querySelector('.Quick_bottom_box')
+
+downBtn.addEventListener('click', () => {
+  gsap.to(window, 1, {
+    scrollTo: 7000
+  })
+})
+/* down_btn */
+
+
+const quickMove = document.querySelectorAll('.Quick_button_box.Move')
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY > 200) {
+      gsap.to(quickMove, 0.3, {
+        opacity: 1
+      })
+    } else {
+        gsap.to(quickMove, 0.3, {
+          opacity: 0
+        })
+    }
+})
+
+
+
+
 
 const HamBtn = document.querySelector('.AllMenu')
 const sheetAll = document.querySelector('.sheet_All')
@@ -64,6 +101,8 @@ const searsh = document.querySelector('#Lnb_seash')
 searshBtn.addEventListener('click', () => {
     searsh.style.width = '120px'
     searsh.style.opacity = '1'
+    searshBtn.style.flex = '1.5'
+    // searshBtn.style.textAlign = 'end'
     searsh.setAttribute('placeholder', '검색어 입력')
 })
 
