@@ -212,7 +212,9 @@ label {cursor: pointer;}
 .option_choice {
     margin-bottom: 15px;
 }
-.option_choice .option_choice_03 {
+.option_choice_box .option_choice_03 {
+    height: 47px;
+    transition: 0.3s;
 }
 
 .option_choice .label_box {
@@ -236,6 +238,15 @@ label {cursor: pointer;}
 .option_choice_03 .label_box label {
     width: 95px;
 }
+
+
+
+#choice1:checked ~ .option_choice_box .option_choice_03 {
+    opacity: 0;
+    height: 0;
+    overflow: hidden;
+}
+
 
 
 
@@ -393,6 +404,8 @@ label {cursor: pointer;}
 
 
 
+
+
 /* -----------tab_nav------------ */
 
 .tab_nav {
@@ -454,18 +467,18 @@ label {cursor: pointer;}
 
 
 
-.Shipping_box {
+.Details_box {
     position: relative;
     height: 1200px;
     margin-bottom: 100px;
     overflow: hidden;
 }
 
-.Shipping_box img {
+.Details_box img {
     width: 100%;
 }
 
-.Shipping_box .filter {
+.Details_box .filter {
     position: absolute;
     width: 100%;
     height: 1200px;
@@ -474,10 +487,10 @@ label {cursor: pointer;}
     background: linear-gradient(transparent, white)
 }
 
-#ShippingBtn {display: none;}
+#DetailsBtn {display: none;}
 
-.Shipping_box .Sh_btn,
-.Shipping_box button {
+.Details_box .De_btn,
+.Details_box button {
     position: absolute;
     width: 260px;
     line-height: 65px;
@@ -490,7 +503,7 @@ label {cursor: pointer;}
     font-size: 20px;
     text-align: center;
 }
-.Shipping_box .Sh_btn i,
-.Shipping_box button i {
+.Details_box .Sh_btn i,
+.Details_box button i {
     padding-left: 10px;
 }

@@ -40,9 +40,10 @@ function off() {
 
 
 function Event() {
-    const Btn = document.querySelector('#ShippingBtn')
+    const Btn = document.querySelector('#DetailsBtn')
 
-    if (Btn.checkd) {
+    // if (Btn.checkd = true) {
+    if (checkbox.checked = true) {
         document.querySelector('.tab_nav_02').style.color = 'bule'
     }
 
