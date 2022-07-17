@@ -6,30 +6,6 @@ a {text-decoration: none;}
 li {list-style: none;}
 
 
-button {
-    width: 300px;
-    height: 70px;
-    border-radius: 35px;
-    border: none;
-    background-color: #ff6c57;
-    margin: 0 auto;
-    transition: 0.1s;
-    cursor: pointer;
-}
-button:hover {
-    transform: scale(1.01);
-    width: 303px;
-    height: 73px;
-}
-
-button a {
-    font-size: 18px;
-    color: white;
-}
-button:hover a {
-    text-decoration: underline;
-}
-
 
 
 /* font-family: 'Rubik', sans-serif; */
@@ -145,6 +121,9 @@ button:hover a {
     line-height: 50px;
 
     /* border: 1px solid #333; */
+}
+.Lnb_box .lnb li ul li a {
+    color: #222;
 }
 .Lnb_box .lnb li .lnb01 {
     padding-right: 130px;
@@ -422,10 +401,12 @@ nav {
     background-color: white;
 
     transition: 0.3s;
-    opacity: 0;
+    /* opacity: 0; */
+    display: none;
 }
 .nav_inner .Quick_button_box:hover .title_tag {
-    opacity: 1;
+    /* opacity: 1; */
+    display: block;
 }
 
 .nav_inner .Quick_button_box i {

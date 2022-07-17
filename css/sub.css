@@ -10,7 +10,7 @@
 
 .title_box .navigation {
     display: flex;
-    margin: 40px 0;
+    margin: 30px 0;
 }
 
 .title_box .navigation li {
@@ -21,7 +21,7 @@
     font-size: 14px;
     color: #222;
 }
-.title_box .navigation ul li a:hover {
+.title_box .navigation li a:hover {
     /* text-decoration: underline; */
     font-weight: 500;
 }
@@ -212,10 +212,12 @@ aside .filter>li h4 {
 }
 
 .product_coner .product_list li {
-    cursor: pointer;
     width: calc(33.333333% - 60px);
     margin-right: 30px;
     padding: 15px;
+}
+.product_coner .product_list li a {
+    color: #222;
 }
 
 .product_coner .product_list li .thumbnail {

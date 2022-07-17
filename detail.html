@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>koke</title>
+
+    <!--제이쿼리-->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+
+    <!--스와이퍼-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js" defer></script>
+
+    <!--폰트어썸-->
+    <script src="https://kit.fontawesome.com/2c083cd22c.js" crossorigin="anonymous" defer></script>
+    
+    <!--XEICON-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+
+    <!--YTPlayer-->
+    <link rel="stylesheet" href="./css/jquery.mb.YTPlayer.min.css">
+    <script src="./js/jquery.mb.YTPlayer.min.js" defer></script>
+
+    <!--ScrollMagic-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js" ></script>
+
+
+    <link rel="stylesheet" href="./css/basics.css">
+    <link rel="stylesheet" href="./css/detail.css">
+    <script src="./js/basics.js" defer></script>
+    <script src="./js/detail.js" defer></script>
+
+
+</head>
+
+<body>
+
+    <div class="wrap">
+        
+        <ul class="navigation">
+            <li><a href="./index.html">홈</a></li>
+            >
+            <li><a href="./sub.html">모든커피</a></li>
+            >
+            <li><a href="./detail.html">스프링 블렌드</a></li>
+        </ul>
+            
+            
+        
+
+        <section class="main_box">
+
+            <div class="img_container">
+                <div class="main_img">
+                    <img src="./imags/detail/thumbnail_01.JPG" alt="">
+                </div>
+                <div class="thum_img_outer">
+                    <div class="logo_box">
+                        <div class="logo_img"><img src="./imags/detail/logo.jpg" alt=""></div>
+                        <p>콩볶는 사람들</p>
+                    </div>
+                    <div class="thum_img_box">
+                        <img src="./imags/detail/thumbnail_01.JPG" alt="">
+                        <img src="./imags/detail/thumbnail_02.JPG" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="option_container">
+                <h3>스프링 블렌드</h3>
+                <p>#밀크초코 은은함</p>
+
+                <input type="radio" name="choice" id="choice1" checked>
+                <input type="radio" name="choice" id="choice2">
+
+                <div class="Purchase_choice">
+                    <div class="bg_move"></div>
+                    <label for="choice1" class="choice_01">한번만 구매하기</label>
+                    <label for="choice2" class="choice_02">구독하기</label>
+                </div>
+
+                <div class="information_text">
+                    <div class="box01">
+                        <p class="title">판매가</p>
+                        <p>4,000원</p>
+                    </div>
+                    <div class="box02">
+                        <p class="title">구매혜택</p>
+                        <p><span class="mileage">M</span>적립 마일리지 : +200원</p>
+                    </div>
+                    <div class="box03">
+                        <p class="title">제조사</p>
+                        <p>(주)콩볶는 사람들</p>
+                    </div>
+                    <div class="box04">
+                        <p class="title">원산지</p>
+                        <p>브라질, 콜롬비아, 에티오피아</p>
+                    </div>
+                    <div class="box05">
+                        <p class="title">구성품</p>
+                        <p>스프링 블렌드 (200g, 500g, 1kg)</p>
+                    </div>
+                </div><!--information_text-->
+
+                <div class="option_choice_box">
+                    <div class="option_choice option_choice_01">
+                        <p class="title">원두 용량</p>
+
+                        <input type="radio" name="capacity" id="capacity_200" checked>
+                        <input type="radio" name="capacity" id="capacity_400">
+                        <input type="radio" name="capacity" id="capacity_1000">
+
+                        <div class="label_box">
+                            <label for="capacity_200" class="Capacity_200">200g</label>
+                            <label for="capacity_400" class="Capacity_400">400g</label>
+                            <label for="capacity_1000" class="Capacity_1000">1kg</label>
+                        </div>
+                    </div><!--option_choice_01-->
+                    <div class="option_choice option_choice_02">
+                        <p class="title">분쇄 선택</p>
+
+                        <input type="radio" name="Crushing" id="Crushing_01" checked>
+                        <input type="radio" name="Crushing" id="Crushing_02">
+                        <input type="radio" name="Crushing" id="Crushing_03">
+                        <input type="radio" name="Crushing" id="Crushing_04">
+                        <input type="radio" name="Crushing" id="Crushing_05">
+                        <input type="radio" name="Crushing" id="Crushing_06">
+
+                        <div class="label_box">
+                            <label for="Crushing_01" class="crushing_001">홀빈(분쇄안함)</label>
+                            <label for="Crushing_02" class="crushing_002">커피 메이커</label>
+                            <label for="Crushing_03" class="crushing_003">에스프레소 머신</label>
+                            <label for="Crushing_04" class="crushing_004">프렌치 프레스</label>
+                            <label for="Crushing_05" class="crushing_005">핸드 드립</label>
+                            <label for="Crushing_06" class="crushing_006">모카포트</label>
+                        </div>
+                    </div><!--option_choice_02-->
+
+                    <div class="option_choice option_choice_03">
+                        <p class="title">구독하기</p>
+
+                        <input type="radio" name="Subscription" id="subscription_01" checked>
+                        <input type="radio" name="Subscription" id="subscription_02">
+                        <input type="radio" name="Subscription" id="subscription_03">
+                        <input type="radio" name="Subscription" id="subscription_04">
+
+                        <div class="label_box">
+                            <label for="subscription_01" class="scription_001">매주</label>
+                            <label for="subscription_02" class="scription_002">2주</label>
+                            <label for="subscription_03" class="scription_003">3주</label>
+                            <label for="subscription_04" class="scription_004">4주</label>
+                        </div>
+                    </div><!--option_choice_03-->
+                </div><!--option_choice_box-->
+
+                <div class="button_box">
+                    <button class="cart">장바구니</button>
+                    <button class="order">구매하기</button>
+                    <div class="heart">
+                        <i class="xi-heart-o" onclick="on()"></i>
+                        <i class="xi-heart" onclick="off()"></i>
+                        <div class="speech_bubble">찜하기</div>
+                    </div>
+                </div>
+                
+            </div><!--option_container-->
+            
+        </section><!--main_box-->
+
+        <section id="Details">
+
+            <div class="tab_nav tab_nav_01">
+                <ul>
+                    <li class="li_01 on"><a href="#Details">상품상세정보</a></li>
+                    <li class="li_02"><a href="#Shipping">배송안내</a></li>
+                    <li class="li_03"><a href="#Review">상품후기</a></li>
+                    <li class="li_04"><a href="#Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+
+            <div class="Shipping_box">
+                <img src="./imags/detail/Detaile_page_01.JPG" alt="">
+                <img src="./imags/detail/Detaile_page_02.JPG" alt="">
+
+                <div class="filter"></div>
+
+                <input type="checkbox" id="ShippingBtn">
+                <label for="ShippingBtn" class="Sh_btn" onclick="Event()">
+                    상세정보 더보기<i class="xi-angle-down-min"></i>
+                </label>
+                    
+                <!-- <button id="Toggle_Btn" class="Toggle_Btn" onclick="BtnEvent()">상세정보 더보기
+                    <i class="xi-angle-down-min"></i>
+                </button> -->
+            </div>
+
+        </section><!--Details-->
+
+        <section id="Shipping"> 
+            <div class="tab_nav tab_nav_02">
+                <ul>
+                    <li class="li_01"><a href="#Details">상품상세정보</a></li>
+                    <li class="li_02 on"><a href="#Shipping">배송안내</a></li>
+                    <li class="li_03"><a href="#Review">상품후기</a></li>
+                    <li class="li_04"><a href="#Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+
+        </section>
+
+        <section id="Review">
+            <div class="tab_nav tab_nav_03">
+                <ul>
+                    <li class="li_01"><a href="#Details">상품상세정보</a></li>
+                    <li class="li_02"><a href="#Shipping">배송안내</a></li>
+                    <li class="li_03 on"><a href="#Review">상품후기</a></li>
+                    <li class="li_04"><a href="#Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="Inquiry">
+            <div class="tab_nav tab_nav_04">
+                <ul>
+                    <li class="li_01"><a href="#Details">상품상세정보</a></li>
+                    <li class="li_02"><a href="#Shipping">배송안내</a></li>
+                    <li class="li_03"><a href="#Review">상품후기</a></li>
+                    <li class="li_04 on"><a href="#Inquiry">상품문의</a></li>
+                </ul>
+            </div>
+        </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </div><!--warp-->
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
